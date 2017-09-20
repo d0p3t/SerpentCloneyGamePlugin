@@ -15,7 +15,6 @@ class SerpentCloneyGame(Game, metaclass=Singleton):
         kwargs["app_id"] = "400030"
         kwargs["app_args"] = None
 
-
         super().__init__(**kwargs)
 
         self.api_class = CloneyAPI
@@ -24,7 +23,11 @@ class SerpentCloneyGame(Game, metaclass=Singleton):
     @property
     def screen_regions(self):
         regions = {
-            "SAMPLE_REGION": (0, 0, 0, 0)
+            # "SCREEN_REGION": (y1, x1, y2, x2)
+            "MAIN_MENU_PLAY": (413, 307, 490, 534),
+            "GAME_OVER_PLAY": (421, 307, 498, 534),
+            "GAME_PAUSE": (6, 943, 81, 1018),
+            "GAME_CENTER": (242, 490, 292, 540),
         }
 
         return regions
