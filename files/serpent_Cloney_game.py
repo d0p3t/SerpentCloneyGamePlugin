@@ -26,8 +26,7 @@ class SerpentCloneyGame(Game, metaclass=Singleton):
             # "SCREEN_REGION": (y1, x1, y2, x2)
             "MAIN_MENU_PLAY": (413, 307, 490, 534),
             "GAME_OVER_PLAY": (421, 307, 498, 534),
-            "GAME_PAUSE": (6, 943, 81, 1018),
-            "GAME_CENTER": (242, 490, 292, 540),
+            "GAME_PAUSE": (6, 943, 81, 1018)
         }
 
         return regions
